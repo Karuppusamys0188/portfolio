@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("Assets/Calculator\ BGC.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body h1{
+  margin-bottom: 10%;
+}
+
+/* Container Styles */
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 90%;
+  box-sizing: border-box;
+  animation: fadeIn 1.5s ease-in-out;
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+/* Input Styles */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input-field::placeholder{
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 18px;
+}
+
+/* Button Styles */
+.button {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+.back a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Result and Error Styles */
+.result,
+.error {
+  margin-top: 20px;
+  font-size: 1.2em;
+  display: none;
+}
+
+.result {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+.error {
+  color: #dc3545;
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
